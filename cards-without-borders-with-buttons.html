@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Portal</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="py-4 mb-4 border-bottom">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="mb-0">User Portal</h1>
+      <div class="d-flex align-items-center gap-2">
+        <select id="dept-select" class="form-select form-select-sm" style="width:auto;">
+          <option value="">All Departments</option>
+          <option value="Development">Development</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Events">Events</option>
+          <option value="Operations">Operations</option>
+          <option value="HR">HR</option>
+        </select>
+        <button id="edit-toggle" class="btn btn-sm btn-outline-secondary">Edit</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container mb-5">
+
+    <!-- ── Everyone ─────────────────────────────────────────────── -->
+    <section class="portal-section mb-5" data-section="everyone">
+      <div class="section-header d-flex align-items-center gap-2 mb-3">
+        <h2 class="mb-0">Everyone</h2>
+        <button
+          class="btn btn-sm btn-outline-secondary ms-2 collapse-btn"
+          data-bs-toggle="collapse"
+          data-bs-target="#section-everyone"
+          aria-expanded="true"
+          aria-controls="section-everyone"
+        >Collapse</button>
+      </div>
+      <div class="collapse show" id="section-everyone">
+        <div class="row g-4 card-grid">
+
+          <div class="col card-col" data-card-id="email">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Email" class="card-img-top" alt="Email logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Email</h5>
+                <p class="card-text text-muted">Company email and calendar platform.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Email</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="chat">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Chat" class="card-img-top" alt="Chat logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Team Chat</h5>
+                <p class="card-text text-muted">Real-time messaging and collaboration.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Team Chat</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="docs">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Docs" class="card-img-top" alt="Docs logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Company Docs</h5>
+                <p class="card-text text-muted">Shared knowledge base and documentation.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Company Docs</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="ithelp">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=IT+Help" class="card-img-top" alt="IT Help logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">IT Help Desk</h5>
+                <p class="card-text text-muted">Submit and track IT support tickets.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">IT Help Desk</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="video">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Video" class="card-img-top" alt="Video logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Video Calls</h5>
+                <p class="card-text text-muted">Schedule and join video meetings.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Video Calls</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="vpn">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=VPN" class="card-img-top" alt="VPN logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">VPN</h5>
+                <p class="card-text text-muted">Secure remote access to company network.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">VPN</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="files">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Files" class="card-img-top" alt="Files logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">File Storage</h5>
+                <p class="card-text text-muted">Cloud file storage and sharing.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">File Storage</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="calendar">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Calendar" class="card-img-top" alt="Calendar logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Calendar</h5>
+                <p class="card-text text-muted">Shared team calendar and scheduling.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Calendar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="directory">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Directory" class="card-img-top" alt="Directory logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Directory</h5>
+                <p class="card-text text-muted">Company staff directory and org chart.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Directory</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="news">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=News" class="card-img-top" alt="News logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Company News</h5>
+                <p class="card-text text-muted">Internal announcements and updates.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Company News</a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.card-grid -->
+      </div><!-- /.collapse -->
+    </section>
+
+    <!-- ── Development ───────────────────────────────────────────── -->
+    <section class="portal-section mb-5" data-section="development">
+      <div class="section-header d-flex align-items-center gap-2 mb-3">
+        <h2 class="mb-0">Development</h2>
+        <button
+          class="btn btn-sm btn-outline-secondary ms-2 collapse-btn"
+          data-bs-toggle="collapse"
+          data-bs-target="#section-development"
+          aria-expanded="true"
+          aria-controls="section-development"
+        >Collapse</button>
+      </div>
+      <div class="collapse show" id="section-development">
+        <div class="row g-4 card-grid">
+
+          <div class="col card-col" data-card-id="git">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Git" class="card-img-top" alt="Git logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Git Repository</h5>
+                <p class="card-text text-muted">Source control and code reviews.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Git Repository</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="cicd">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=CI%2FCD" class="card-img-top" alt="CI/CD logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">CI / CD Pipeline</h5>
+                <p class="card-text text-muted">Automated build, test, and deploy pipeline.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">CI / CD Pipeline</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="issues">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Issues" class="card-img-top" alt="Issues logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Issue Tracker</h5>
+                <p class="card-text text-muted">Bug tracking and sprint planning board.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Issue Tracker</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="infra">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Infra" class="card-img-top" alt="Infrastructure logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Infrastructure</h5>
+                <p class="card-text text-muted">Cloud console and server management.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Infrastructure</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="monitoring">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Monitoring" class="card-img-top" alt="Monitoring logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Monitoring</h5>
+                <p class="card-text text-muted">Application performance and error tracking.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Monitoring</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="security">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Security" class="card-img-top" alt="Security logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Security</h5>
+                <p class="card-text text-muted">Vulnerability scanning and access management.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Security</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="testing">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Testing" class="card-img-top" alt="Testing logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Test Suite</h5>
+                <p class="card-text text-muted">Automated test runs and coverage reports.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Test Suite</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="devdocs">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Dev+Docs" class="card-img-top" alt="Dev Docs logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Dev Docs</h5>
+                <p class="card-text text-muted">API references and architecture guides.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Dev Docs</a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.card-grid -->
+      </div><!-- /.collapse -->
+    </section>
+
+    <!-- ── Marketing ─────────────────────────────────────────────── -->
+    <section class="portal-section mb-5" data-section="marketing">
+      <div class="section-header d-flex align-items-center gap-2 mb-3">
+        <h2 class="mb-0">Marketing</h2>
+        <button
+          class="btn btn-sm btn-outline-secondary ms-2 collapse-btn"
+          data-bs-toggle="collapse"
+          data-bs-target="#section-marketing"
+          aria-expanded="true"
+          aria-controls="section-marketing"
+        >Collapse</button>
+      </div>
+      <div class="collapse show" id="section-marketing">
+        <div class="row g-4 card-grid">
+
+          <div class="col card-col" data-card-id="crm">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=CRM" class="card-img-top" alt="CRM logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">CRM</h5>
+                <p class="card-text text-muted">Customer relationship and pipeline management.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">CRM</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="analytics">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Analytics" class="card-img-top" alt="Analytics logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Analytics</h5>
+                <p class="card-text text-muted">Website traffic and conversion reporting.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Analytics</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="emailmktg">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Email+Mktg" class="card-img-top" alt="Email Marketing logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Email Marketing</h5>
+                <p class="card-text text-muted">Campaign builder and audience management.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Email Marketing</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="social">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Social" class="card-img-top" alt="Social Media logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Social Media</h5>
+                <p class="card-text text-muted">Schedule and manage social media posts.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Social Media</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="design">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Design" class="card-img-top" alt="Design logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Design</h5>
+                <p class="card-text text-muted">Brand assets and creative tooling.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Design</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="seo">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=SEO" class="card-img-top" alt="SEO logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">SEO</h5>
+                <p class="card-text text-muted">Search rankings and keyword tracking.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">SEO</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="content">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Content" class="card-img-top" alt="Content logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Content</h5>
+                <p class="card-text text-muted">Content calendar and publishing workflow.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Content</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="ads">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Ads" class="card-img-top" alt="Ads logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Ad Manager</h5>
+                <p class="card-text text-muted">Paid campaign management and budgets.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Ad Manager</a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.card-grid -->
+      </div><!-- /.collapse -->
+    </section>
+
+    <!-- ── Events ─────────────────────────────────────────────────── -->
+    <section class="portal-section mb-5" data-section="events">
+      <div class="section-header d-flex align-items-center gap-2 mb-3">
+        <h2 class="mb-0">Events</h2>
+        <button
+          class="btn btn-sm btn-outline-secondary ms-2 collapse-btn"
+          data-bs-toggle="collapse"
+          data-bs-target="#section-events"
+          aria-expanded="true"
+          aria-controls="section-events"
+        >Collapse</button>
+      </div>
+      <div class="collapse show" id="section-events">
+        <div class="row g-4 card-grid">
+
+          <div class="col card-col" data-card-id="reg">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Reg" class="card-img-top" alt="Registration logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Registration</h5>
+                <p class="card-text text-muted">Event registration and ticketing platform.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Registration</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="venue">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Venue" class="card-img-top" alt="Venue logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Venue Management</h5>
+                <p class="card-text text-muted">Book and manage event spaces.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Venue Management</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="agenda">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Agenda" class="card-img-top" alt="Agenda logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Agenda Builder</h5>
+                <p class="card-text text-muted">Create and publish event schedules.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Agenda Builder</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="speakers">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Speakers" class="card-img-top" alt="Speakers logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Speakers</h5>
+                <p class="card-text text-muted">Speaker profiles and session management.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Speakers</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="sponsors">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Sponsors" class="card-img-top" alt="Sponsors logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Sponsors</h5>
+                <p class="card-text text-muted">Sponsor tiers, assets, and communications.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Sponsors</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="badges">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Badges" class="card-img-top" alt="Badges logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Badges</h5>
+                <p class="card-text text-muted">Badge printing and check-in management.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Badges</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="streaming">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Stream" class="card-img-top" alt="Streaming logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Streaming</h5>
+                <p class="card-text text-muted">Live stream and virtual event platform.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Streaming</a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.card-grid -->
+      </div><!-- /.collapse -->
+    </section>
+
+    <!-- ── Operations ────────────────────────────────────────────── -->
+    <section class="portal-section mb-5" data-section="operations">
+      <div class="section-header d-flex align-items-center gap-2 mb-3">
+        <h2 class="mb-0">Operations</h2>
+        <button
+          class="btn btn-sm btn-outline-secondary ms-2 collapse-btn"
+          data-bs-toggle="collapse"
+          data-bs-target="#section-operations"
+          aria-expanded="true"
+          aria-controls="section-operations"
+        >Collapse</button>
+      </div>
+      <div class="collapse show" id="section-operations">
+        <div class="row g-4 card-grid">
+
+          <div class="col card-col" data-card-id="finance">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Finance" class="card-img-top" alt="Finance logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Finance</h5>
+                <p class="card-text text-muted">Accounting, invoices, and expense reports.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Finance</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="inventory">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Inventory" class="card-img-top" alt="Inventory logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Inventory</h5>
+                <p class="card-text text-muted">Track stock levels and manage orders.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Inventory</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="procurement">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Procurement" class="card-img-top" alt="Procurement logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Procurement</h5>
+                <p class="card-text text-muted">Purchase orders and vendor management.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Procurement</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="facilities">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Facilities" class="card-img-top" alt="Facilities logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Facilities</h5>
+                <p class="card-text text-muted">Desk booking and facilities requests.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Facilities</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="shipping">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Shipping" class="card-img-top" alt="Shipping logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Shipping</h5>
+                <p class="card-text text-muted">Outbound logistics and carrier management.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Shipping</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="fleet">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Fleet" class="card-img-top" alt="Fleet logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Fleet</h5>
+                <p class="card-text text-muted">Vehicle tracking and maintenance schedules.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Fleet</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="maintenance">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Maint." class="card-img-top" alt="Maintenance logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Maintenance</h5>
+                <p class="card-text text-muted">Equipment maintenance and work orders.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Maintenance</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="risk">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Risk" class="card-img-top" alt="Risk logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Risk</h5>
+                <p class="card-text text-muted">Risk register and compliance tracking.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Risk</a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.card-grid -->
+      </div><!-- /.collapse -->
+    </section>
+
+    <!-- ── HR ─────────────────────────────────────────────────────── -->
+    <section class="portal-section mb-5" data-section="hr">
+      <div class="section-header d-flex align-items-center gap-2 mb-3">
+        <h2 class="mb-0">HR</h2>
+        <button
+          class="btn btn-sm btn-outline-secondary ms-2 collapse-btn"
+          data-bs-toggle="collapse"
+          data-bs-target="#section-hr"
+          aria-expanded="true"
+          aria-controls="section-hr"
+        >Collapse</button>
+      </div>
+      <div class="collapse show" id="section-hr">
+        <div class="row g-4 card-grid">
+
+          <div class="col card-col" data-card-id="hris">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=HRIS" class="card-img-top" alt="HRIS logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">HRIS</h5>
+                <p class="card-text text-muted">Employee records and org chart.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">HRIS</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="payroll">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Payroll" class="card-img-top" alt="Payroll logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Payroll</h5>
+                <p class="card-text text-muted">Pay stubs, tax documents, and payroll runs.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Payroll</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="benefits">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Benefits" class="card-img-top" alt="Benefits logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Benefits</h5>
+                <p class="card-text text-muted">Health, dental, and other employee benefits.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Benefits</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="recruiting">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Recruiting" class="card-img-top" alt="Recruiting logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Recruiting</h5>
+                <p class="card-text text-muted">Job postings, applicant tracking, and interviews.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Recruiting</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="training">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Training" class="card-img-top" alt="Training logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Training</h5>
+                <p class="card-text text-muted">Learning management and course library.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Training</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="performance">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Perf." class="card-img-top" alt="Performance logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Performance</h5>
+                <p class="card-text text-muted">Goal setting and performance reviews.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Performance</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="onboarding">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Onboard" class="card-img-top" alt="Onboarding logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Onboarding</h5>
+                <p class="card-text text-muted">New hire checklists and orientation tasks.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Onboarding</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col card-col" data-card-id="timeoff">
+            <div class="card h-100">
+              <img src="https://placehold.co/75x75?text=Time+Off" class="card-img-top" alt="Time Off logo" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Time Off</h5>
+                <p class="card-text text-muted">Request and track leave and PTO.</p>
+                <a href="#" class="btn btn-primary mt-auto stretched-link">Time Off</a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.card-grid -->
+      </div><!-- /.collapse -->
+    </section>
+
+  </main>
+
+  <!-- Hidden-cards restore banner -->
+  <div id="restore-bar" class="container mb-4 d-none">
+    <div class="alert alert-secondary d-flex align-items-center justify-content-between mb-0">
+      <span id="restore-bar-text">Some cards are hidden.</span>
+      <button class="btn btn-sm btn-secondary" id="restore-all-btn">Restore all hidden cards</button>
+    </div>
+  </div>
+
+  <footer class="portal-footer text-muted small">
+    &copy; <span id="footer-year"></span> User Portal
+    <span class="footer-controls ms-3">
+      <button id="export-btn" class="btn btn-sm btn-outline-secondary footer-link">Export layout</button>
+      <button id="import-btn" class="btn btn-sm btn-outline-secondary footer-link ms-2">Import layout</button>
+      <input type="file" id="import-input" accept="application/json" style="display:none" />
+      <button id="reset-btn" class="btn btn-sm btn-outline-secondary footer-link ms-2">Reset layout</button>
+      <button id="theme-toggle" class="btn btn-sm btn-outline-secondary footer-link ms-2">Dark Mode</button>
+    </span>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+{
+  "departments": {
+    "Development":  ["development"],
+    "Marketing":    ["marketing"],
+    "Events":       ["events"],
+    "Operations":   ["operations"],
+    "HR":           ["hr"]
+  },
+  "sections": [
+    {
+      "id": "general",
+      "title": "General",
+      "cards": [
+        { "id": "email",     "title": "Email",          "desc": "Company email and calendar platform.",            "img": "https://placehold.co/75x75?text=Email",     "url": "#" },
+        { "id": "chat",      "title": "Team Chat",       "desc": "Real-time messaging and collaboration.",          "img": "https://placehold.co/75x75?text=Chat",      "url": "#" },
+        { "id": "docs",      "title": "Company Docs",    "desc": "Shared knowledge base and documentation.",        "img": "https://placehold.co/75x75?text=Docs",      "url": "#" },
+        { "id": "ithelp",    "title": "IT Help Desk",    "desc": "Submit and track IT support tickets.",            "img": "https://placehold.co/75x75?text=IT+Help",   "url": "#" },
+        { "id": "video",     "title": "Video Calls",     "desc": "Schedule and join video meetings.",               "img": "https://placehold.co/75x75?text=Video",     "url": "#" },
+        { "id": "vpn",       "title": "VPN",             "desc": "Secure remote access to company network.",        "img": "https://placehold.co/75x75?text=VPN",       "url": "#" },
+        { "id": "files",     "title": "File Storage",    "desc": "Cloud file storage and sharing.",                 "img": "https://placehold.co/75x75?text=Files",     "url": "#" },
+        { "id": "calendar",  "title": "Calendar",        "desc": "Shared team calendar and scheduling.",            "img": "https://placehold.co/75x75?text=Calendar",  "url": "#" },
+        { "id": "directory", "title": "Directory",       "desc": "Company staff directory and org chart.",          "img": "https://placehold.co/75x75?text=Directory", "url": "#" },
+        { "id": "news",      "title": "Company News",    "desc": "Internal announcements and updates.",             "img": "https://placehold.co/75x75?text=News",      "url": "#" }
+      ]
+    },
+    {
+      "id": "development",
+      "title": "Development",
+      "cards": [
+        { "id": "git",        "title": "Git Repository",   "desc": "Source control and code reviews.",                   "img": "https://placehold.co/75x75?text=Git",       "url": "#" },
+        { "id": "cicd",       "title": "CI / CD Pipeline", "desc": "Automated build, test, and deploy pipeline.",         "img": "https://placehold.co/75x75?text=CI%2FCD",   "url": "#" },
+        { "id": "issues",     "title": "Issue Tracker",    "desc": "Bug tracking and sprint planning board.",             "img": "https://placehold.co/75x75?text=Issues",    "url": "#" },
+        { "id": "infra",      "title": "Infrastructure",   "desc": "Cloud console and server management.",                "img": "https://placehold.co/75x75?text=Infra",     "url": "#" },
+        { "id": "monitoring", "title": "Monitoring",       "desc": "Application performance and error tracking.",         "img": "https://placehold.co/75x75?text=Monitoring","url": "#" },
+        { "id": "security",   "title": "Security",         "desc": "Vulnerability scanning and access management.",       "img": "https://placehold.co/75x75?text=Security",  "url": "#" },
+        { "id": "testing",    "title": "Test Suite",       "desc": "Automated test runs and coverage reports.",           "img": "https://placehold.co/75x75?text=Testing",   "url": "#" },
+        { "id": "devdocs",    "title": "Dev Docs",         "desc": "API references and architecture guides.",             "img": "https://placehold.co/75x75?text=Dev+Docs",  "url": "#" }
+      ]
+    },
+    {
+      "id": "marketing",
+      "title": "Marketing",
+      "cards": [
+        { "id": "crm",       "title": "CRM",             "desc": "Customer relationship and pipeline management.", "img": "https://placehold.co/75x75?text=CRM",        "url": "#" },
+        { "id": "analytics", "title": "Analytics",       "desc": "Website traffic and conversion reporting.",     "img": "https://placehold.co/75x75?text=Analytics",  "url": "#" },
+        { "id": "emailmktg", "title": "Email Marketing", "desc": "Campaign builder and audience management.",     "img": "https://placehold.co/75x75?text=Email+Mktg", "url": "#" },
+        { "id": "social",    "title": "Social Media",    "desc": "Schedule and manage social media posts.",       "img": "https://placehold.co/75x75?text=Social",     "url": "#" },
+        { "id": "design",    "title": "Design",          "desc": "Brand assets and creative tooling.",            "img": "https://placehold.co/75x75?text=Design",     "url": "#" },
+        { "id": "seo",       "title": "SEO",             "desc": "Search rankings and keyword tracking.",         "img": "https://placehold.co/75x75?text=SEO",        "url": "#" },
+        { "id": "content",   "title": "Content",         "desc": "Content calendar and publishing workflow.",     "img": "https://placehold.co/75x75?text=Content",    "url": "#" },
+        { "id": "ads",       "title": "Ad Manager",      "desc": "Paid campaign management and budgets.",         "img": "https://placehold.co/75x75?text=Ads",        "url": "#" }
+      ]
+    },
+    {
+      "id": "events",
+      "title": "Events",
+      "cards": [
+        { "id": "reg",       "title": "Registration",     "desc": "Event registration and ticketing platform.",     "img": "https://placehold.co/75x75?text=Reg",      "url": "#" },
+        { "id": "venue",     "title": "Venue Management", "desc": "Book and manage event spaces.",                  "img": "https://placehold.co/75x75?text=Venue",    "url": "#" },
+        { "id": "agenda",    "title": "Agenda Builder",   "desc": "Create and publish event schedules.",            "img": "https://placehold.co/75x75?text=Agenda",   "url": "#" },
+        { "id": "speakers",  "title": "Speakers",         "desc": "Speaker profiles and session management.",       "img": "https://placehold.co/75x75?text=Speakers", "url": "#" },
+        { "id": "sponsors",  "title": "Sponsors",         "desc": "Sponsor tiers, assets, and communications.",    "img": "https://placehold.co/75x75?text=Sponsors", "url": "#" },
+        { "id": "badges",    "title": "Badges",           "desc": "Badge printing and check-in management.",        "img": "https://placehold.co/75x75?text=Badges",   "url": "#" },
+        { "id": "streaming", "title": "Streaming",        "desc": "Live stream and virtual event platform.",        "img": "https://placehold.co/75x75?text=Stream",   "url": "#" }
+      ]
+    },
+    {
+      "id": "operations",
+      "title": "Operations",
+      "cards": [
+        { "id": "finance",     "title": "Finance",      "desc": "Accounting, invoices, and expense reports.",        "img": "https://placehold.co/75x75?text=Finance",     "url": "#" },
+        { "id": "inventory",   "title": "Inventory",    "desc": "Track stock levels and manage orders.",             "img": "https://placehold.co/75x75?text=Inventory",   "url": "#" },
+        { "id": "procurement", "title": "Procurement",  "desc": "Purchase orders and vendor management.",            "img": "https://placehold.co/75x75?text=Procurement", "url": "#" },
+        { "id": "facilities",  "title": "Facilities",   "desc": "Desk booking and facilities requests.",             "img": "https://placehold.co/75x75?text=Facilities",  "url": "#" },
+        { "id": "shipping",    "title": "Shipping",     "desc": "Outbound logistics and carrier management.",        "img": "https://placehold.co/75x75?text=Shipping",    "url": "#" },
+        { "id": "fleet",       "title": "Fleet",        "desc": "Vehicle tracking and maintenance schedules.",       "img": "https://placehold.co/75x75?text=Fleet",       "url": "#" },
+        { "id": "maintenance", "title": "Maintenance",  "desc": "Equipment maintenance and work orders.",            "img": "https://placehold.co/75x75?text=Maint.",      "url": "#" },
+        { "id": "risk",        "title": "Risk",         "desc": "Risk register and compliance tracking.",            "img": "https://placehold.co/75x75?text=Risk",        "url": "#" }
+      ]
+    },
+    {
+      "id": "hr",
+      "title": "HR",
+      "cards": [
+        { "id": "hris",        "title": "HRIS",        "desc": "Employee records and org chart.",                  "img": "https://placehold.co/75x75?text=HRIS",       "url": "#" },
+        { "id": "payroll",     "title": "Payroll",     "desc": "Pay stubs, tax documents, and payroll runs.",      "img": "https://placehold.co/75x75?text=Payroll",    "url": "#" },
+        { "id": "benefits",    "title": "Benefits",    "desc": "Health, dental, and other employee benefits.",     "img": "https://placehold.co/75x75?text=Benefits",   "url": "#" },
+        { "id": "recruiting",  "title": "Recruiting",  "desc": "Job postings, applicant tracking, and interviews.","img": "https://placehold.co/75x75?text=Recruiting", "url": "#" },
+        { "id": "training",    "title": "Training",    "desc": "Learning management and course library.",          "img": "https://placehold.co/75x75?text=Training",   "url": "#" },
+        { "id": "performance", "title": "Performance", "desc": "Goal setting and performance reviews.",            "img": "https://placehold.co/75x75?text=Perf.",      "url": "#" },
+        { "id": "onboarding",  "title": "Onboarding",  "desc": "New hire checklists and orientation tasks.",       "img": "https://placehold.co/75x75?text=Onboard",    "url": "#" },
+        { "id": "timeoff",     "title": "Time Off",    "desc": "Request and track leave and PTO.",                 "img": "https://placehold.co/75x75?text=Time+Off",   "url": "#" }
+      ]
+    }
+  ]
+}
